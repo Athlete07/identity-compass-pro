@@ -4,93 +4,97 @@
 
 /* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
 All colors MUST be HSL.
+Updated: 2025-10-28 - New teal/green color palette applied
+Cache-bust: 2025-10-28-11:20 - Force reload with teal/green theme
 */
 
 @layer base {
   :root {
-    --background: 240 40% 98%;
-    --foreground: 240 25% 12%;
+    /* Light Mode Theme - Teal/Green Palette */
+    --background: 210 40% 98%;
+    --foreground: 222.2 47.4% 11.2%;
 
     --card: 0 0% 100%;
-    --card-foreground: 240 25% 12%;
+    --card-foreground: 222.2 47.4% 11.2%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 240 25% 12%;
+    --popover-foreground: 222.2 47.4% 11.2%;
 
-    --primary: 252 70% 58%;
+    --primary: 160 84% 39%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 252 70% 68%;
+    --primary-glow: 160 84% 49%;
 
-    --secondary: 210 60% 55%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
 
-    --muted: 240 10% 94%;
-    --muted-foreground: 240 10% 45%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 280 65% 60%;
+    --accent: 160 60% 45%;
     --accent-foreground: 0 0% 100%;
 
-    --success: 142 70% 45%;
+    --success: 142 76% 36%;
     --success-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 240 15% 88%;
-    --input: 240 15% 88%;
-    --ring: 252 70% 58%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 160 84% 39%;
 
-    --radius: 0.75rem;
+    --radius: 0.5rem;
 
-    --gradient-primary: linear-gradient(135deg, hsl(252 70% 58%), hsl(280 65% 60%));
-    --gradient-hero: linear-gradient(180deg, hsl(240 40% 98%), hsl(252 70% 96%));
-    --gradient-card: linear-gradient(135deg, hsl(252 70% 98%), hsl(280 65% 98%));
+    --gradient-primary: linear-gradient(135deg, hsl(160 84% 39%), hsl(160 60% 45%));
+    --gradient-hero: linear-gradient(180deg, hsl(210 40% 98%), hsl(210 40% 96%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(210 40% 98%));
     
-    --shadow-soft: 0 4px 20px -2px hsl(252 70% 58% / 0.1);
-    --shadow-glow: 0 0 40px hsl(252 70% 68% / 0.2);
+    --shadow-soft: 0 2px 8px hsl(160 84% 39% / 0.08);
+    --shadow-glow: 0 0 40px hsl(160 84% 39% / 0.15);
     
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .dark {
-    --background: 240 25% 8%;
-    --foreground: 240 10% 95%;
+    /* Dark Mode Theme - Teal/Green Palette */
+    --background: 222.2 47.4% 11.2%;
+    --foreground: 210 40% 98%;
 
-    --card: 240 20% 12%;
-    --card-foreground: 240 10% 95%;
+    --card: 217.2 32.6% 17.5%;
+    --card-foreground: 210 40% 98%;
 
-    --popover: 240 20% 12%;
-    --popover-foreground: 240 10% 95%;
+    --popover: 217.2 32.6% 17.5%;
+    --popover-foreground: 210 40% 98%;
 
-    --primary: 252 70% 62%;
+    --primary: 160 84% 39%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 252 70% 72%;
+    --primary-glow: 160 84% 49%;
 
-    --secondary: 210 60% 50%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
 
-    --muted: 240 15% 18%;
-    --muted-foreground: 240 10% 60%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 280 65% 55%;
+    --accent: 160 60% 45%;
     --accent-foreground: 0 0% 100%;
 
-    --success: 142 70% 45%;
+    --success: 142 76% 42%;
     --success-foreground: 0 0% 100%;
 
-    --destructive: 0 62.8% 50.6%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
 
-    --border: 240 15% 20%;
-    --input: 240 15% 20%;
-    --ring: 252 70% 62%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 160 84% 39%;
 
-    --gradient-primary: linear-gradient(135deg, hsl(252 70% 62%), hsl(280 65% 55%));
-    --gradient-hero: linear-gradient(180deg, hsl(240 25% 8%), hsl(252 70% 12%));
-    --gradient-card: linear-gradient(135deg, hsl(252 70% 15%), hsl(280 65% 15%));
+    --gradient-primary: linear-gradient(135deg, hsl(160 84% 39%), hsl(160 60% 45%));
+    --gradient-hero: linear-gradient(180deg, hsl(222.2 47.4% 11.2%), hsl(217.2 32.6% 17.5%));
+    --gradient-card: linear-gradient(145deg, hsl(217.2 32.6% 17.5%), hsl(222.2 47.4% 11.2%));
     
-    --shadow-soft: 0 4px 20px -2px hsl(252 70% 62% / 0.2);
-    --shadow-glow: 0 0 40px hsl(252 70% 72% / 0.3);
+    --shadow-soft: 0 2px 8px hsl(0 0% 0% / 0.3);
+    --shadow-glow: 0 0 40px hsl(160 84% 39% / 0.2);
   }
 }
 
@@ -101,5 +105,337 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+  }
+
+  /* Force primary color application */
+  .bg-primary {
+    background-color: hsl(var(--primary)) !important;
+  }
+
+  .text-primary {
+    color: hsl(var(--primary)) !important;
+  }
+
+  .border-primary {
+    border-color: hsl(var(--primary)) !important;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
+  }
+
+  /* Mobile-specific optimizations */
+  @media (max-width: 640px) {
+    .container {
+      @apply px-3;
+    }
+    
+    .text-responsive {
+      @apply text-sm;
+    }
+    
+    .text-responsive-lg {
+      @apply text-lg;
+    }
+    
+    .text-responsive-xl {
+      @apply text-xl;
+    }
+    
+    .text-responsive-2xl {
+      @apply text-2xl;
+    }
+    
+    .text-responsive-3xl {
+      @apply text-3xl;
+    }
+    
+    .text-responsive-4xl {
+      @apply text-4xl;
+    }
+    
+    .p-responsive {
+      @apply p-4;
+    }
+    
+    .p-responsive-lg {
+      @apply p-6;
+    }
+    
+    .py-responsive {
+      @apply py-8;
+    }
+    
+    .py-responsive-lg {
+      @apply py-12;
+    }
+    
+    .gap-responsive {
+      @apply gap-3;
+    }
+    
+    .gap-responsive-lg {
+      @apply gap-4;
+    }
+    
+    .space-y-responsive {
+      @apply space-y-4;
+    }
+    
+    .space-y-responsive-lg {
+      @apply space-y-6;
+    }
+    
+    .space-y-responsive-xl {
+      @apply space-y-8;
+    }
+    
+    .grid-responsive {
+      @apply grid-cols-1;
+    }
+    
+    .grid-responsive-2 {
+      @apply grid-cols-1 sm:grid-cols-2;
+    }
+    
+    .flex-responsive {
+      @apply flex-col;
+    }
+    
+    .flex-responsive-row {
+      @apply flex-col sm:flex-row;
+    }
+    
+    .w-responsive {
+      @apply w-full;
+    }
+    
+    .w-responsive-auto {
+      @apply w-full sm:w-auto;
+    }
+    
+    .text-center-mobile {
+      @apply text-center;
+    }
+    
+    .justify-center-mobile {
+      @apply justify-center;
+    }
+    
+    .items-center-mobile {
+      @apply items-center;
+    }
+    
+    .max-w-responsive {
+      @apply max-w-full;
+    }
+    
+    .max-w-responsive-sm {
+      @apply max-w-sm;
+    }
+    
+    .max-w-responsive-md {
+      @apply max-w-md;
+    }
+    
+    .max-w-responsive-lg {
+      @apply max-w-lg;
+    }
+    
+    .max-w-responsive-xl {
+      @apply max-w-xl;
+    }
+    
+    .max-w-responsive-2xl {
+      @apply max-w-2xl;
+    }
+    
+    .max-w-responsive-3xl {
+      @apply max-w-3xl;
+    }
+    
+    .max-w-responsive-4xl {
+      @apply max-w-4xl;
+    }
+    
+    .max-w-responsive-5xl {
+      @apply max-w-5xl;
+    }
+    
+    .max-w-responsive-6xl {
+      @apply max-w-6xl;
+    }
+    
+    .h-responsive {
+      @apply h-auto;
+    }
+    
+    .h-responsive-screen {
+      @apply min-h-screen;
+    }
+    
+    .overflow-responsive {
+      @apply overflow-x-hidden;
+    }
+    
+    .leading-responsive {
+      @apply leading-tight;
+    }
+    
+    .leading-responsive-relaxed {
+      @apply leading-relaxed;
+    }
+    
+    .shadow-responsive {
+      @apply shadow-sm;
+    }
+    
+    .shadow-responsive-lg {
+      @apply shadow-md;
+    }
+    
+    .rounded-responsive {
+      @apply rounded-lg;
+    }
+    
+    .rounded-responsive-lg {
+      @apply rounded-xl;
+    }
+    
+    .border-responsive {
+      @apply border;
+    }
+    
+    .border-responsive-2 {
+      @apply border-2;
+    }
+    
+    .gap-responsive-sm {
+      @apply gap-2;
+    }
+    
+    .gap-responsive-md {
+      @apply gap-3;
+    }
+    
+    .gap-responsive-lg {
+      @apply gap-4;
+    }
+    
+    .gap-responsive-xl {
+      @apply gap-6;
+    }
+    
+    .gap-responsive-2xl {
+      @apply gap-8;
+    }
+    
+    .space-x-responsive {
+      @apply space-x-2;
+    }
+    
+    .space-x-responsive-lg {
+      @apply space-x-4;
+    }
+    
+    .space-x-responsive-xl {
+      @apply space-x-6;
+    }
+    
+    .space-x-responsive-2xl {
+      @apply space-x-8;
+    }
+    
+    .space-y-responsive-sm {
+      @apply space-y-2;
+    }
+    
+    .space-y-responsive-md {
+      @apply space-y-3;
+    }
+    
+    .space-y-responsive-lg {
+      @apply space-y-4;
+    }
+    
+    .space-y-responsive-xl {
+      @apply space-y-6;
+    }
+    
+    .space-y-responsive-2xl {
+      @apply space-y-8;
+    }
+    
+    .space-y-responsive-3xl {
+      @apply space-y-12;
+    }
+    
+    .space-y-responsive-4xl {
+      @apply space-y-16;
+    }
+    
+    .space-y-responsive-5xl {
+      @apply space-y-20;
+    }
+    
+    .space-y-responsive-6xl {
+      @apply space-y-24;
+    }
+    
+    .space-y-responsive-7xl {
+      @apply space-y-28;
+    }
+    
+    .space-y-responsive-8xl {
+      @apply space-y-32;
+    }
+    
+    .space-y-responsive-9xl {
+      @apply space-y-36;
+    }
+    
+    .space-y-responsive-10xl {
+      @apply space-y-40;
+    }
+    
+    .space-y-responsive-11xl {
+      @apply space-y-44;
+    }
+    
+    .space-y-responsive-12xl {
+      @apply space-y-48;
+    }
+    
+    .space-y-responsive-13xl {
+      @apply space-y-48;
+    }
+    
+    .space-y-responsive-14xl {
+      @apply space-y-48;
+    }
+    
+    .space-y-responsive-15xl {
+      @apply space-y-48;
+    }
+    
+    .space-y-responsive-16xl {
+      @apply space-y-48;
+    }
+    
+    .space-y-responsive-17xl {
+      @apply space-y-48;
+    }
+    
+    .space-y-responsive-18xl {
+      @apply space-y-48;
+    }
+    
+    .space-y-responsive-19xl {
+      @apply space-y-48;
+    }
+    
+    .space-y-responsive-20xl {
+      @apply space-y-24;
+    }
   }
 }
